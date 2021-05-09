@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float calcularImc(float a, float p);
+
+    main()
+{
+    float peso, altura;
+    printf("Digite o peso: ");
+    scanf("%f",&peso);
+    printf("Digite a altura: ");
+    scanf("%f",&altura);
+    float imc = calcularImc(altura, peso);
+    printf("Valor do imc %6.2f \n", imc);
+}
+float calcularImc(float a, float p)
+{
+    float resultado = p/(a*a);
+    return resultado;
+}
